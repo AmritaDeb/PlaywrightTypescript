@@ -1,0 +1,4 @@
+username,password,expected,run
+standard_user,secret_sauce,success,true
+invalid_user,secret_santa,error,true
+problem_user,secret_sauce,success,false
