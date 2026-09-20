@@ -6,14 +6,12 @@ export class LoginPage {
     readonly username : Locator;
     readonly password : Locator;
     readonly loginButton : Locator;
-    readonly errorMessage : Locator;
 
     constructor(page : Page){
         this.page = page;
         this.username = page.locator('#user-name');
         this.password = page.locator('#password');
         this.loginButton = page.locator('#login-button');
-        this.errorMessage = page.locator('//h3[@data-test="error"]');
     }
 
     async goToLoginPage(url : string){
@@ -26,4 +24,7 @@ export class LoginPage {
         await this.loginButton.click();
     }
 
+    async verifyLoginSuccessfull(url2 : string){
+        await this.page.waitForURL(url2);
+    }
 }

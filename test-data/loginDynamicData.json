@@ -1,0 +1,20 @@
+[
+    {
+        "username" : "standard_user",
+        "password" : "secret_sauce",
+        "expected" : "success",
+        "run" : true
+    },
+    {
+        "username" : "invalid_user",
+        "password" : "secret_santa",
+        "expected" : "error",
+        "run" : true
+    },
+    {
+        "username" : "problem_user",
+        "password" : "secret_sauce",
+        "expected" : "success",
+        "run" : true
+    }
+]
